@@ -115,7 +115,19 @@ const outfit1 = "Outfit 1 consists of Kristyn's " + kristynsCloset[0] + ", " + k
 
 const outfit2 = "Outfit 2 consists of Thom's " + thomsCloset[0][0] + ", " + thomsCloset[1][0] + ", and " + thomsCloset[2][0] + ".";
 
-const outfit3 = "Outfit 2 consists of Thom's " + thomsCloset[0][1] + ", " + thomsCloset[1][1] + ", and " + thomsCloset[2][1] + ".";
+const outfit3 = "Outfit 3 consists of Thom's " + thomsCloset[0][1] + ", " + thomsCloset[1][1] + ", and " + thomsCloset[2][1] + ".";
+
+
+//Dirty Laundry
+for(i = 0; i < kristynsCloset.length; i++) {
+	console.log("WHIRR: Now washing " + kristynsCloset[i]);
+}
+
+//Inventory
+for(i = 0; i < thomsCloset.length; i++) {
+	console.log(thomsCloset[i]);
+}
+
 
 
 
