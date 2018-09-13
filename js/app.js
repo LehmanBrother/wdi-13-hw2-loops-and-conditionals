@@ -28,7 +28,7 @@
 //If a number is divisible by 3 log "Fizz" instead of the number.
 //If a number is divisible by 5 log "Buzz" instead of the number.
 //If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
-for(i = 1; i <= 100; i++) {
+/*for(i = 1; i <= 100; i++) {
 	if(i % 3 === 0 && i % 5 === 0) {
 		console.log("FizzBuzz");
 	} else if(i % 3 === 0) {
@@ -36,4 +36,34 @@ for(i = 1; i <= 100; i++) {
 	} else if(i % 5 === 0) {
 		console.log("Buzz");
 	} else console.log(i);
-}
+}*/
+
+//Getting to Know You--make a bunch of changes to some arrays
+const shahzad = ["Shahzad", 1000, "Austin"];
+const jim = ["Jim", 16, "All cities"];
+const reuben = ["Reuben", 22, "Durham"];
+const daniel = ["Daniel", 186, "Dallas"];
+const ryan = ["Ryan", 65, "Denver"];
+
+shahzad[0] = "Gameboy";
+daniel[1] += 1;
+ryan[2] = "Gotham";
+reuben.pop();
+reuben.push("Chicago");
+jim.pop();
+jim.push("Santiago","Singapore","Reykjavik");
+jim.splice(2,1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
