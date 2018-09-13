@@ -56,7 +56,7 @@ jim.splice(2,1);*/
 
 //Yell at the Ninja Turtles--play with cases in an array
 //All uppercase
-const ninjaTurtles = ["Donatello","Leonardo","Raphael","Michaelangelo"];
+/*const ninjaTurtles = ["Donatello","Leonardo","Raphael","Michaelangelo"];
 for(i = 0; i < ninjaTurtles.length; i++) {
 	console.log(ninjaTurtles[i].toUpperCase());
 }
@@ -72,10 +72,50 @@ const alternateCase = function(s) {
 
 for(i = 0; i < ninjaTurtles.length; i++) {
 	console.log(alternateCase(ninjaTurtles[i]));
-}
+}*/
 
+//Return of the Closets
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
 
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
 
+//Alien Attire
+const kristynsShoe = kristynsCloset.shift();
+thomsCloset[2].push(kristynsShoe);
+
+//Dress 'em Up
+const outfit1 = "Outfit 1 consists of Kristyn's " + kristynsCloset[0] + ", " + kristynsCloset[2] + ", and " + kristynsCloset[3] + ".";
+
+const outfit2 = "Outfit 2 consists of Thom's " + thomsCloset[0][0] + ", " + thomsCloset[1][0] + ", and " + thomsCloset[2][0] + ".";
+
+const outfit3 = "Outfit 2 consists of Thom's " + thomsCloset[0][1] + ", " + thomsCloset[1][1] + ", and " + thomsCloset[2][1] + ".";
 
 
 
