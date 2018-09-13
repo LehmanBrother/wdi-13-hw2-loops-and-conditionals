@@ -39,7 +39,7 @@
 }*/
 
 //Getting to Know You--make a bunch of changes to some arrays
-const shahzad = ["Shahzad", 1000, "Austin"];
+/*const shahzad = ["Shahzad", 1000, "Austin"];
 const jim = ["Jim", 16, "All cities"];
 const reuben = ["Reuben", 22, "Durham"];
 const daniel = ["Daniel", 186, "Dallas"];
@@ -52,12 +52,27 @@ reuben.pop();
 reuben.push("Chicago");
 jim.pop();
 jim.push("Santiago","Singapore","Reykjavik");
-jim.splice(2,1);
+jim.splice(2,1);*/
 
+//Yell at the Ninja Turtles--play with cases in an array
+//All uppercase
+const ninjaTurtles = ["Donatello","Leonardo","Raphael","Michaelangelo"];
+for(i = 0; i < ninjaTurtles.length; i++) {
+	console.log(ninjaTurtles[i].toUpperCase());
+}
 
+//Alternating case
+const alternateCase = function(s) {
+	const chars = s.toLowerCase().split("");
+	for(let i = 0; i < chars.length; i+=2) {
+		chars[i] = chars[i].toUpperCase();
+	}
+	return chars.join("");
+}
 
-
-
+for(i = 0; i < ninjaTurtles.length; i++) {
+	console.log(alternateCase(ninjaTurtles[i]));
+}
 
 
 
