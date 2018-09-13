@@ -129,14 +129,37 @@ for(i = 0; i < thomsCloset.length; i++) {
 }*/
 
 //Multiples of 3 and 5
-let sum = 0;
+/*let sum = 0;
 for(i = 1; i < 1000; i++) {
 	if(i % 3 === 0 || i % 5 === 0) {
 		sum += i;
 	}
 }
 
-console.log(sum);
+console.log(sum);*/
+
+//Triangles
+let argument = 7;
+
+for(i = 1; i <= argument; i++) {
+	console.log("#".repeat(i));
+}
+
+for(i = 1; i <= argument; i++) {
+	console.log(" ".repeat(7-i) + "#".repeat(i));
+}
+
+for(i = 0; i < argument; i++) {
+	console.log("#".repeat(7-i) + " ".repeat(i));
+}
+
+for(i = 0; i < argument; i++) {
+	console.log(" ".repeat(i) + "#".repeat(7-i));
+}
+
+
+
+
 
 
 
