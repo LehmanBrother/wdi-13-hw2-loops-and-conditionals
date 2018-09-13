@@ -139,7 +139,7 @@ for(i = 1; i < 1000; i++) {
 console.log(sum);*/
 
 //Triangles
-let argument = 7;
+/*let argument = 7;
 
 for(i = 1; i <= argument; i++) {
 	console.log("#".repeat(i));
@@ -155,8 +155,28 @@ for(i = 0; i < argument; i++) {
 
 for(i = 0; i < argument; i++) {
 	console.log(" ".repeat(i) + "#".repeat(7-i));
+}*/
+
+const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18,12, 17, 12, 71, 18, 15, 12];
+
+nums.sort(function(a,b) {
+	return a - b;
+})
+
+//nums2 created to test median function for arrays with an even number of elements
+const nums2 = [100, 14, 11, 16, 40, 13, 16, 45, 17, 19, 11, 12, 14, 19, 11, 50, 17, 11, 18,12, 17, 12, 71, 18, 55, 12];
+
+nums2.sort(function(a,b) {
+	return a - b;
+})
+
+const median = function(a) {
+	if(a.length % 2 === 1) {
+		console.log(a[(a.length-1)/2]);
+	} else console.log((a[a.length/2] + a[a.length/2 - 1])/2);
 }
 
+//length = 24; length/2 = 12; need mean of length/2 and length/2 - 1
 
 
 
